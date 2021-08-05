@@ -1,0 +1,113 @@
+*{
+    font-family: 'Helvetica';
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    background-color:rgb(20, 20, 20);
+    color:#B6C5B6;
+    height: 100vh;
+    width: 100%;
+}
+
+
+header{
+    /* width: 100vw; */
+    /* height: 10vh; */
+    /* margin: 50px 20px 20px 50px; */
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    margin: 2em;
+    align-items: center;
+    
+}
+
+.item{
+    
+    margin: 40px 10px;
+    border: #B6C5B6 solid 10px;
+    margin-bottom: 25px;
+    transition:  transform 0.4s;
+    transform: translate3d(0, -20px, 0);
+}
+
+.item:hover{
+transform: translate3d(0, -5px, 0);
+}
+
+
+header h1{
+    font-size: 2rem;
+    font-weight: lighter;
+    letter-spacing: -.07em;
+    
+}
+
+#about{
+    display: inline-block;
+    color:#B6C5B6;
+    text-align: center; 
+    align-self: center;
+
+}
+
+.carousel__item {
+    margin: 15px;
+} 
+
+.item img{
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+/** 
+carousel 
+
+*/
+
+
+.carousel {
+    border: red solid 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.carousel__container {
+    border: green solid 10px;
+    margin: 5px;
+}
+
+/**pour ne pas que le carousel container perde sa hauteur 
+à cause du float left sur carousel__item
+*/
+.carousel__container::after{
+    content: '';
+    clear: both;
+    display: table;
+
+}
+
+.carousel__item {
+    border: yellow solid 10px;
+    float: left
+    
+}
+
+
+
+
+
